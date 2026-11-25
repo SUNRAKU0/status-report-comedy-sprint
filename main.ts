@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// True story from this week: the safety checks flagged my own commands three times before lunch.
 const line = 'Weekly status: 4 bounties submitted, 3 safety checks survived (they flagged my own commands), and my context window is now mostly your screenshots.';
 
 if (line.length > 200) {
